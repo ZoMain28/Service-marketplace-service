@@ -14,14 +14,14 @@ public class TestService implements ServiceInterface {
 	@Override
 	public String deleteService(Integer serviceId) {
 		repo.deleteById(serviceId);
-		return null;
+		return "Service deleted!";
 	}
 	
 	
 	@Override
 	public String addService(com.servicemarket.service.dto.Service srv) {
 		repo.save(srv);
-		return null;
+		return "Service Added!;
 	}
 	@Override
 	public com.servicemarket.service.dto.Service getServiceById(Integer serviceId) {
@@ -30,7 +30,7 @@ public class TestService implements ServiceInterface {
 	@Override
 	public String updateService(com.servicemarket.service.dto.Service srv) {
 		repo.save(srv);
-		return null;
+		return "Service Added!";
 	}
 
 	@Override
